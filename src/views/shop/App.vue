@@ -1,15 +1,18 @@
 <template>
-  <div id="app">
+  <div id="shop">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">shop 首页</router-link> |
+      <router-link to="/list">List</router-link> |
+      <router-link to="/detail">Detail</router-link> |
+      <a href="../">单页Index首页</a> |
+      <a href="../home.html"> 单页Home首页</a>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="less">
-#app {
+#shop {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

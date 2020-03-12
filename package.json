@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "npm run build-index && npm run build-home && npm run build-shop",
+    "build-index": "vue-cli-service build index",
+    "build-home": "vue-cli-service build home",
+    "build-shop": "vue-cli-service build shop",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "nprogress": "^0.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2"
